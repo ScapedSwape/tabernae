@@ -2,16 +2,25 @@
 
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_mchps"]
 [ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="2_oxitu"]
-[ext_resource type="Texture2D" uid="uid://c3t61mhg2ga7d" path="res://frame0000.png" id="3_kky7l"]
-[ext_resource type="Texture2D" uid="uid://dc1xobvwgkkqk" path="res://frame0002.png" id="4_f45jn"]
-[ext_resource type="Texture2D" uid="uid://devxpr6mro606" path="res://frame0005.png" id="5_mihhf"]
-[ext_resource type="Texture2D" uid="uid://0pvbn16bacbe" path="res://frame0009.png" id="6_44xg0"]
-[ext_resource type="Texture2D" uid="uid://hbqlu6qohhtr" path="res://frame0012.png" id="7_j2c2l"]
-[ext_resource type="Texture2D" uid="uid://ckmkoaeuu75ge" path="res://frame0014.png" id="8_xlksx"]
-[ext_resource type="Texture2D" uid="uid://bjwbpk221kf85" path="res://frame0017.png" id="9_0i2qn"]
-[ext_resource type="Texture2D" uid="uid://6dad3loj756o" path="res://frame0018.png" id="10_f45jn"]
-[ext_resource type="Texture2D" uid="uid://c84yecpi66ih5" path="res://frame0019.png" id="10_mjunf"]
-[ext_resource type="Texture2D" uid="uid://dfjlmlov6fpbk" path="res://frame0022.png" id="11_86630"]
+[ext_resource type="Texture2D" uid="uid://v5vf5714v7ou" path="res://scuffed walking/frame0024.png" id="3_ckfaw"]
+[ext_resource type="Texture2D" uid="uid://c3t61mhg2ga7d" path="res://ball destruction/frame0000.png" id="3_kky7l"]
+[ext_resource type="Texture2D" uid="uid://dc1xobvwgkkqk" path="res://ball destruction/frame0002.png" id="4_f45jn"]
+[ext_resource type="Texture2D" uid="uid://devxpr6mro606" path="res://ball destruction/frame0005.png" id="5_mihhf"]
+[ext_resource type="Texture2D" uid="uid://0pvbn16bacbe" path="res://ball destruction/frame0009.png" id="6_44xg0"]
+[ext_resource type="Texture2D" uid="uid://hbqlu6qohhtr" path="res://ball destruction/frame0012.png" id="7_j2c2l"]
+[ext_resource type="Texture2D" uid="uid://ckmkoaeuu75ge" path="res://ball destruction/frame0014.png" id="8_xlksx"]
+[ext_resource type="Texture2D" uid="uid://bjwbpk221kf85" path="res://ball destruction/frame0017.png" id="9_0i2qn"]
+[ext_resource type="Texture2D" uid="uid://6dad3loj756o" path="res://ball destruction/frame0018.png" id="10_f45jn"]
+[ext_resource type="Texture2D" uid="uid://c84yecpi66ih5" path="res://ball destruction/frame0019.png" id="10_mjunf"]
+[ext_resource type="Texture2D" uid="uid://dfjlmlov6fpbk" path="res://ball destruction/frame0022.png" id="11_86630"]
+[ext_resource type="Texture2D" uid="uid://s3fq7j8axvuc" path="res://scuffed walking/frame0000.png" id="14_qg60q"]
+[ext_resource type="Texture2D" uid="uid://b18saoo665mym" path="res://scuffed walking/frame0003.png" id="15_3124h"]
+[ext_resource type="Texture2D" uid="uid://c143rrh0b7bq0" path="res://scuffed walking/frame0006.png" id="16_jpegv"]
+[ext_resource type="Texture2D" uid="uid://ftq6nhhnv7n3" path="res://scuffed walking/frame0009.png" id="17_2s1jd"]
+[ext_resource type="Texture2D" uid="uid://c0ctpnx2lasp3" path="res://scuffed walking/frame0012.png" id="18_tgdce"]
+[ext_resource type="Texture2D" uid="uid://bu4q2hajbx16l" path="res://scuffed walking/frame0015.png" id="19_0sow6"]
+[ext_resource type="Texture2D" uid="uid://dndc5a6sr43lx" path="res://scuffed walking/frame0018.png" id="20_6ivcu"]
+[ext_resource type="Texture2D" uid="uid://w25eptyc4oye" path="res://scuffed walking/frame0021.png" id="21_ar8b8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v0no8"]
 texture = ExtResource("1_mchps")
@@ -201,18 +210,6 @@ sources/0 = SubResource("TileSetAtlasSource_s61do")
 
 [sub_resource type="Animation" id="Animation_or5uj"]
 length = 0.8333333
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("3_kky7l")]
-}
 
 [sub_resource type="Animation" id="Animation_ckfaw"]
 resource_name = "ball destruction"
@@ -230,10 +227,26 @@ tracks/0/keys = {
 "values": [ExtResource("3_kky7l"), ExtResource("4_f45jn"), ExtResource("5_mihhf"), ExtResource("6_44xg0"), ExtResource("7_j2c2l"), ExtResource("8_xlksx"), ExtResource("9_0i2qn"), ExtResource("10_f45jn"), ExtResource("10_mjunf"), ExtResource("11_86630"), ExtResource("3_kky7l")]
 }
 
+[sub_resource type="Animation" id="Animation_kvlrk"]
+resource_name = "scuffed walk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.23333335, 0.33333334, 0.46666667, 0.59999996, 0.7, 0.8333333, 0.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_qg60q"), ExtResource("15_3124h"), ExtResource("16_jpegv"), ExtResource("17_2s1jd"), ExtResource("18_tgdce"), ExtResource("19_0sow6"), ExtResource("20_6ivcu"), ExtResource("21_ar8b8"), ExtResource("3_ckfaw")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qg60q"]
 _data = {
 &"RESET": SubResource("Animation_or5uj"),
-&"ball destruction": SubResource("Animation_ckfaw")
+&"ball destruction": SubResource("Animation_ckfaw"),
+&"scuffed walk": SubResource("Animation_kvlrk")
 }
 
 [node name="Node2d" type="Node2D" unique_id=256980891]
@@ -248,7 +261,7 @@ script = ExtResource("2_oxitu")
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2145833455]
 position = Vector2(210, 0)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("3_kky7l")
+texture = ExtResource("3_ckfaw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=2088871678]
 position = Vector2(-16, -24.125)
@@ -261,5 +274,5 @@ tile_set = SubResource("TileSet_g4v7s")
 [node name="Camera2D" type="Camera2D" parent="Player/TileMapLayer" unique_id=1072380419]
 position = Vector2(-168, -86)
 
-[node name="BallDestructionPunch" type="AnimationPlayer" parent="Player" unique_id=1864553030]
+[node name="BallDestructionManAssets" type="AnimationPlayer" parent="Player" unique_id=1864553030]
 libraries/ = SubResource("AnimationLibrary_qg60q")

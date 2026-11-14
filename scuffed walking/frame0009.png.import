@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckmkoaeuu75ge"
-path="res://.godot/imported/frame0014.png-f8b60a95cd323d38cf8c7a35a118356a.ctex"
+uid="uid://ftq6nhhnv7n3"
+path="res://.godot/imported/frame0009.png-e92c65f1dc46d6f28e0707db1e35556a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://frame0014.png"
-dest_files=["res://.godot/imported/frame0014.png-f8b60a95cd323d38cf8c7a35a118356a.ctex"]
+source_file="res://scuffed walking/frame0009.png"
+dest_files=["res://.godot/imported/frame0009.png-e92c65f1dc46d6f28e0707db1e35556a.ctex"]
 
 [params]
 

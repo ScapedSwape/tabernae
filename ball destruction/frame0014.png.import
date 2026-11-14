@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0pvbn16bacbe"
-path="res://.godot/imported/frame0009.png-7d694d97d744cd28e2f14350c4e3a02f.ctex"
+uid="uid://ckmkoaeuu75ge"
+path="res://.godot/imported/frame0014.png-ba5a75840911b21082287de2628d66c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://frame0009.png"
-dest_files=["res://.godot/imported/frame0009.png-7d694d97d744cd28e2f14350c4e3a02f.ctex"]
+source_file="res://ball destruction/frame0014.png"
+dest_files=["res://.godot/imported/frame0014.png-ba5a75840911b21082287de2628d66c6.ctex"]
 
 [params]
 
