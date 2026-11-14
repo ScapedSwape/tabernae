@@ -260,5 +260,5 @@ tile_set = SubResource("TileSet_g4v7s")
 [node name="Camera2D" type="Camera2D" parent="Player/TileMapLayer" unique_id=1072380419]
 position = Vector2(-168, -86)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Player" unique_id=1864553030]
+[node name="BallDestructionPunch" type="AnimationPlayer" parent="Player" unique_id=1864553030]
 libraries/ = SubResource("AnimationLibrary_qg60q")
