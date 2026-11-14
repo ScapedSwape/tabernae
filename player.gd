@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 670.0
-const JUMP_VELOCITY = -420.0
+const SPEED = 600.0
+const JUMP_VELOCITY = -400.0
 
 
 func _physics_process(delta: float) -> void:
@@ -11,7 +11,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
@@ -23,3 +23,15 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+ 
+const HitboxScene = preload("res://area_2d.gd") # Path to your hitbox scene
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("attack"):
+		_attack()
+
+func _attack() -> void:
+	var hitbox = HitboxScene.instantiate()
+	var offset = Vector2(30, 0).rotated(rotation) 
+	hitbox.global_position = global_position + offset
+	get_tree().current_scene.add_child(hitbox)
